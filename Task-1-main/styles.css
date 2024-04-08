@@ -1,0 +1,143 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for header and navigation */
+.header {
+    background-color: rgba(240, 240, 229, 0.395);
+    padding: 10px 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: large;
+}
+
+.logo img {
+    width: 180px;
+    height: 150;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: rgb(203, 34, 25);
+    color: #121313;
+    font-weight: 1000;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: red;
+}
+
+/* Basic styling for hero section */
+.hero {
+    background-color: #b6c9ca;
+    background-size: cover;
+    background-position: center;
+    color: #090909;
+    text-align: center;
+    padding: 130px 0;
+    s
+}
+@keyframes fade-in {
+    from {
+        opacity: 10;
+        transform: translateY(220px);
+    }
+    to {
+        opacity: 10;
+        transform: translateY(100);
+    }
+}
+.hero-content {
+    animation: fade-in 2s ease-out;
+}
+.hero-content p { 
+    font-size: xx-large;
+}
+.hero-content h1 {
+    font-size: 1ārem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.0Srem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #78747a;
+    color: #090909;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: rgb(231, 231, 235);
+    
+}
+
+/* Styling for features section */
+.features {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex: 0 1 calc(33.33% - 20px);
+    text-align: center;
+}
+
+.feature img {
+    width: 200px;
+    height: 200;
+    margin-bottom: 10px;
+}
+
+.feature h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Styling for footer */
+.footer {
+    background-color: #206394;
+    color: #ede9e9;
+    text-align: center;
+    padding: 20px 0;
+}
+.mainpic{
+   width: auto;
+   text-align: centre;
+   padding: 15px;
+   border: 3px solid black;
+   max-width: 100%;
+   height: auto;
+
+}
