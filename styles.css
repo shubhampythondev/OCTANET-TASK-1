@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  .container{
+      width: 100%;
+      min-height: 100vh;
+      background: #fff;
+      padding: 10px;
+  }
+      
+  .todo-list{
+      width: 100%;
+      max-width: 600px;
+      margin: 100px auto 20px;
+      padding: 40px 30px 70px;
+      border-radius: 10px;
+      background: #4b4a4a;
+      box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
+      10px 10px 70px rgba(0,0,0,0.25),
+      inset 5px 5px 10px rgba(0,0,0,0.5),
+      inset 5px 5px 20px rgba(255,255,255,0.2),
+      inset -5px -5px 15px rgba(0,0,0,0.75);
+  }
+  .todo-list h2{
+      color: #fffefe;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-family: 'Times New Roman';
+  }
+  .todo-list h2 img{
+      width: 30px;
+      margin-left: 10px;
+  }
+  .row{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #e1e2e5;
+      border-radius: 0;
+      padding: 5px;
+      padding-left: 20px;
+      margin-bottom: 20px;
+  }
+  .input-section h4 {
+    color: #fefcfc;
+    margin-bottom: 15px;
+  }
+  input{
+     flex: 1;
+     border: none;
+     outline: none;
+     background: transparent;
+     padding: 10px;
+     font-weight: 20px;
+     font-size: 15px;  
+  }
+  button{
+      border: none;
+      outline: none;
+      padding: 10px 40px;
+      background: #ff5945;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 40px;
+    
+  }
+  .add-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust the margin-top as needed */
+    margin-bottom: 20px;
+  }
+  .output-row {
+    background: #edeef0;
+    border-radius: 0;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    white-space: pre-line; /* Allow line breaks in the output */
+}
+.output-row button {
+    background: #5cb85c; /* Green color for the "Done" button */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px; /* Adjust as needed */
+  }
+  
+/* Add styles for the dropdown */
+.dropdown {
+    position: relative;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Change this to move items to the right end */
+    background: #e1e2e5;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .selected-option {
+    border: none;
+    outline: none;
+    background: #e1e2e5;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 5px; /* Add margin to separate text from the arrow */
+  }
+  .selected-option::after {
+    content: ' ';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #333; /* Arrow color */
+    margin-left: 5px;
+  }
+  
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: #e1e2e5;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-content div {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  /* Show the dropdown content when the selected-option is clicked */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
