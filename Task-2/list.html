@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TO-DO LIST</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-list">
+        <h2>TO-DO LIST <img src="images/icon.png" /></h2>
+        <div class="input-section">
+          <h4>TASK</h4>
+          <div class="row">
+            <input type="text" id="task-input" placeholder="Enter your task" />
+          </div>
+          <h4>PRIORITY</h4>
+          <div class="row">
+            <div class="dropdown">
+              <div class="selected-option" onclick="toggleDropdown()">
+                Select priority
+              </div>
+              <div class="dropdown-content" id="priority-dropdown">
+                <div onclick="selectPriority('high')">High</div>
+                <div onclick="selectPriority('medium')">Medium</div>
+                <div onclick="selectPriority('low')">Low</div>
+              </div>
+            </div>
+          </div>
+          <h4>DEADLINE</h4>
+          <div class="row">
+            <input
+              type="date"
+              class="form-control"
+              id="deadline-input"
+              placeholder="Enter deadline"
+            />
+          </div>
+        </div>
+        <div class="add-button-container">
+          <button onclick="addTask()">ADD</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
